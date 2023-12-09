@@ -15,6 +15,7 @@ $app = new \Framework\Application(
     ]
 );
 
+# $request  = new \Framework\Component\Http\Request(uniqid(), ''); return BAD REQUEST
 $request  = new \Framework\Component\Http\Request(uniqid(), 'asssss');
 $response = $app->handle($request);
 #dd($response);

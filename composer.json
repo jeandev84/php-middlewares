@@ -2,7 +2,9 @@
     "require": {
         "symfony/var-dumper": "^6.4",
         "psr/log": "^3.0",
-        "monolog/monolog": "^3.5"
+        "monolog/monolog": "^3.5",
+        "psr/http-server-middleware": "^1.0",
+        "symfony/messenger": "^6.4"
     },
     "autoload": {
         "psr-4": {
