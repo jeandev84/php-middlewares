@@ -12,7 +12,7 @@ use Psr\Log\LoggerInterface;
 /**
  * Created by PhpStorm at 09.12.2023
  *
- * @Logging
+ * @Logging Logger request and response
  *
  * @author Jean-Claude <jeanyao@ymail.com>
  *
