@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace Framework;
 
 
+use Framework\Component\Http\Contract\Handler;
 use Framework\Component\Http\Request;
 use Framework\Component\Http\Response;
 

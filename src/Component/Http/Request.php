@@ -20,4 +20,9 @@ final class Request
      )
      {
      }
+
+     public function getContent(): string
+     {
+          return json_encode($_GET);
+     }
 }

@@ -16,8 +16,21 @@ namespace Framework\Component\Http;
 final class Response
 {
     public function __construct(
+        public string $body,
         public readonly Status $status
     )
     {
+    }
+
+
+    public function getBody(): string
+    {
+        return $this->body;
+    }
+
+
+    public function __toString(): string
+    {
+        return $this->getBody();
     }
 }

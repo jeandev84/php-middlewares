@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Framework;
+namespace Framework\Component\Http\Contract;
 
 
 use Framework\Component\Http\Request;
@@ -14,7 +14,7 @@ use Framework\Component\Http\Response;
  *
  * @author Jean-Claude <jeanyao@ymail.com>
  *
- * @package Framework
+ * @package Framework\Component\Http\Contract
  */
 interface Handler
 {
