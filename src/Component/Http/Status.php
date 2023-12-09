@@ -13,7 +13,7 @@ namespace Framework\Component\Http;
  *
  * @package Framework\Component\Http
  */
-enum Status
+enum Status: string
 {
-    case OK;
+    case OK = 'OK';
 }

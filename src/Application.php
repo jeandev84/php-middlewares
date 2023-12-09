@@ -5,6 +5,7 @@ namespace Framework;
 
 
 use Framework\Component\Http\Contract\Handler;
+use Framework\Component\Http\Pipeline;
 use Framework\Component\Http\Request;
 use Framework\Component\Http\Response;
 
@@ -20,14 +21,24 @@ use Framework\Component\Http\Response;
 final class Application
 {
 
+
+      /**
+       * @param Handler $handler
+       *
+       * @param array $middlewares
+      */
       public function __construct(
-          private readonly Handler $handler
+          private readonly Handler $handler,
+          private readonly array $middlewares
       )
       {
       }
 
       public function handle(Request $request): Response
       {
-          return $this->handler->handle($request);
+          /* return $this->handler->handle($request); */
+
+          return (new Pipeline($this->handler, $this->middlewares))
+                 ->handle($request);
       }
 }

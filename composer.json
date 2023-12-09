@@ -1,6 +1,8 @@
 {
     "require": {
-        "symfony/var-dumper": "^6.4"
+        "symfony/var-dumper": "^6.4",
+        "psr/log": "^3.0",
+        "monolog/monolog": "^3.5"
     },
     "autoload": {
         "psr-4": {
