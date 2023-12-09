@@ -16,4 +16,5 @@ namespace Framework\Component\Http;
 enum Status: string
 {
     case OK = 'OK';
+    case BAD_REQUEST = 'BAD REQUEST';
 }

@@ -10,10 +10,11 @@ $logger = new \Monolog\Logger('main',  [
 $app = new \Framework\Application(
     handler: new \Framework\RouteDispatcherHandler(),
     middlewares: [
-        new \App\Middleware\Logging($logger)
+        new \App\Middleware\Logging($logger),
+        new \App\Middleware\Validation()
     ]
 );
 
-$request  = new \Framework\Component\Http\Request(uniqid());
+$request  = new \Framework\Component\Http\Request(uniqid(), 'asssss');
 $response = $app->handle($request);
 #dd($response);
